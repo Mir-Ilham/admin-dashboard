@@ -53,11 +53,10 @@ table {
 
 :root {
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
 }
 
 :root * {
-    /* border: 1px solid black; */
+    box-sizing: border-box;
 }
 
 /* || Main Layout */
@@ -87,3 +86,70 @@ main {
     grid-row: 2 / 7;
     background-color: blanchedalmond;
 }
+
+/* || Navigation Panel */
+
+.brand {
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-logo {
+    background: url("/assets/icons/logo.svg") no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    height: 46px;
+    width: 46px;
+}
+
+.main-logo + span {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding: 10px 0 10px 5px;
+}
+
+.main-navigation, .extra-navigation {
+    margin-top: 40px;
+}
+
+.main-navigation li, .extra-navigation li {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.nav-link {
+    border: 1px solid black;
+}
+
+/* || Linking icons */
+
+.home {background-image: url(/assets/icons/home.svg);}
+.profile {background-image: url(/assets/icons/profile.svg);}
+.messages {background-image: url(/assets/icons/messages.svg);}
+.history {background-image: url(/assets/icons/history.svg);}
+.tasks {background-image: url(/assets/icons/tasks.svg);}
+.communities {background-image: url(/assets/icons/communities.svg);}
+.settings {background-image: url(/assets/icons/settings.svg);}
+.support {background-image: url(/assets/icons/support.svg);}
+.privacy {background-image: url(/assets/icons/privacy.svg);}
+
+
+
+/* || Utility Classes */
