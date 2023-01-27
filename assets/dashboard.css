@@ -259,6 +259,88 @@ header {
     margin: 0 20px;
 }
 
+/* || Main */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.projects {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.projects p {
+    width: 100%;
+    height: 5%;
+    padding: 10px;
+}
+
+.project-cards {
+    background-color: beige;
+    width: 100%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.card * {
+    border: 1px solid black;
+}
+
+.card h2 {
+    width: 100%;
+    height: 20%;
+}
+
+.card p {
+    background-color: red;
+    width: 100%;
+    overflow: hidden;
+    height: 55%;
+}
+
+.card div {
+    width: 100%;
+    height: 25%;
+    padding-top: 10px;
+    text-align: right; 
+}
+
+.favorite, .view, .branch {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-size: contain;
+}
+
+.view {
+    margin: 0 15px;
+}
+
+/* Linking icons */
+.favorite {background-image: url(/assets/icons/favorite.svg);}
+.view {background-image: url(/assets/icons/view.svg);}
+.branch {background-image: url(/assets/icons/branch.svg);}
+
+.extras {
+    background-color: cornflowerblue;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
 /* || Utility Classes */
 
 .btn {
@@ -268,3 +350,4 @@ header {
     width: 100px;
     height: 35px;
 }
+
