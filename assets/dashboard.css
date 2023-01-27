@@ -150,6 +150,121 @@ main {
 .support {background-image: url(/assets/icons/support.svg);}
 .privacy {background-image: url(/assets/icons/privacy.svg);}
 
+/* || Header */
 
+header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 3fr;
+}
+
+.search {
+    background-color: aqua;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 20px;
+    padding-left: 5%;
+}
+
+#search-input {
+    background: url(/assets/icons/search.svg) no-repeat left center;
+    border: 1px solid black;
+    background-size: 20px 20px;
+    padding: 5px 8px;
+    padding-left: 35px;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.user-info {
+    background-color: brown;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    column-gap: 15px;
+    border: 1px solid black;
+}
+
+.display-photo {
+    background: url(/assets//images/dp.png) no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    border: 1px solid black;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.display-photo + span p, h1 {
+    border: 1px solid black;
+}
+
+.display-photo + span h1 {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.display-photo + span p {
+    border: 1px solid black;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.click-down-menus {
+    background-color: bisque;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20%;
+}
+
+.notifications {
+    border: 1px solid black;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+    background: url(/assets/icons/notification.svg) no-repeat center;
+    background-size: contain;
+}
+
+.user-options {
+    border: 1px solid black;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 25px;
+    background: url(/assets/images/dp.png) no-repeat center;
+    background-size: cover;
+}
+
+.action-buttons {
+    background-color: aquamarine;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20%;
+}
+
+.action-buttons button:nth-child(2) {
+    margin: 0 20px;
+}
 
 /* || Utility Classes */
+
+.btn {
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100px;
+    height: 35px;
+}
